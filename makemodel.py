@@ -36,7 +36,7 @@ def makesent(path):
         result.append(tokenize_stem_stop(line.rsplit(' ', 1)[0].lower()))
     return result
 
-sentences = makesent('/Users/yjiang/Documents/pythonWorkspace/freqCounter/agg_self.txt')
+sentences = makesent('/Users/yjiang/Documents/pythonWorkspace/freqCounter/data/agg_self_in_200.txt')
 print(sentences)
 bigram = Phrases(sentences, min_count=1, threshold=1)
 bi_sent = bigram[sentences]

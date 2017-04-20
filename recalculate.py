@@ -47,12 +47,12 @@ def recal(path):
 def hasNumbers(inputString):
     return any(char.isdigit() for char in inputString)
 
-output = recal('/Users/yjiang/Documents/pythonWorkspace/freqCounter/agg_self.txt')
+output = recal('/Users/yjiang/Documents/pythonWorkspace/freqCounter/data/agg_self_200.txt')
 sorted_output = sorted(output.items(), key=lambda x: x[1], reverse=True)
-with open("output.txt", "w") as text_file:
+with open("output/output_self_200.csv", "w") as text_file:
     for out in sorted_output:
-        if not hasNumbers(out[0]) and out[1]>10:
-               text_file.write("{0} {1}\n".format(out[0], out[1]))
+        if not hasNumbers(out[0]) and out[1]>=50:
+               text_file.write("{0},{1}\n".format(out[0], out[1]))
 
 # sent = ['near', 'earth', 'object', 'planetary', 'society']
 # print(trigram[bigram[sent]])
