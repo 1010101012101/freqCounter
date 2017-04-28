@@ -25,6 +25,12 @@ output = convertEva('/Users/yjiang/Documents/nutch_data/keyword_evaluation/outpu
 sorted_output = sorted(output.items(), key=lambda x: x[1], reverse=True)
 with open("/Users/yjiang/Documents/nutch_data/keyword_evaluation/evaluation_formatted.txt", "w") as text_file:
     for out in sorted_output:
-        if int(out[1])>1:
+        if int(out[1])>=1:
                text_file.write("{0},{1}".format(stemstring(out[0].replace('_', ' ')), out[1]))
-#print(stemmer.stem('mitigation'))
+
+#==============================================================================
+# def stemstring(phrase):
+#     stems = [stemmer.stem(w) for w in phrase.split(" ")]
+#     return " ".join(stems)
+# print(stemstring('astronomie'))
+#==============================================================================
