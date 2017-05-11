@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Apr 19 16:29:38 2017
-
 @author: yjiang
+Make a language model from the input file
 """
 
 import gensim, logging, nltk, re, os, sys

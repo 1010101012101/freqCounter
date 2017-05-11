@@ -4,6 +4,7 @@
 Created on Wed Apr 19 16:40:46 2017
 
 @author: yjiang
+Calculate the term/phrase frequency based on the language model
 """
 
 import gensim, logging, nltk, re, os, sys

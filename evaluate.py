@@ -4,6 +4,7 @@
 Created on Thu Apr 27 20:57:59 2017
 
 @author: yjiang
+Evaluate the accuracy of the crawled web pages
 """
 
 def gettotal(path):

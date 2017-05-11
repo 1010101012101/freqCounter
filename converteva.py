@@ -4,6 +4,8 @@
 Created on Fri Apr 21 11:57:04 2017
 
 @author: yjiang
+Convert the term frequency files through stemmer (same as the 
+one used in Nutch similarity scoring)
 """
 import gensim, logging, nltk, re, os, sys
 from nltk.stem import PorterStemmer
